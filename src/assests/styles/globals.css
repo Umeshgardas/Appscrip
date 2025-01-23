@@ -53,7 +53,7 @@ p {
 .stories,
 .about,
 .skills {
-  padding: 0 5rem;
+  padding: 2rem 5rem;
 }
 @media (max-width: 768px) {
   html {

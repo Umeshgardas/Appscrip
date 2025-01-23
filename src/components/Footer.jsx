@@ -24,7 +24,7 @@ export default function Footer() {
             <div>
               <p className="uppercase">Currency </p>
               <p className="currency_footer">
-                <Image src={Icons.USA} /> + USD
+                <Image src={Icons.USA} alt="usa-icon"/> + USD
               </p>
               <p className="gray_text small_text ">
                 Transactions will be completed in Euros and a currency reference
@@ -60,12 +60,12 @@ export default function Footer() {
           <div className="follow_us">
             <div className="column">
               <h4>Follow Us</h4>
-              <Image src={Icons.Instagram} style={{ marginRight: "10px" }} />
-              <Image src={Icons.LinkedIn} />
+              <Image src={Icons.Instagram} style={{ marginRight: "10px" }} alt="instagram" />
+              <Image src={Icons.LinkedIn} alt="linkedin"/>
             </div>
             <div className="column">
               <h4>mettā muse Accepts</h4>
-              <Image src={Icons.FooterPaymentPartner} />
+              <Image src={Icons.FooterPaymentPartner} alt="payment-partner"/>
             </div>
           </div>
         </div>

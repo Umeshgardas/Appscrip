@@ -1,9 +1,14 @@
 import Layout from "@/components/Layout";
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const stories = () => {
   return (
     <div className="stories">
+    <Helmet>
+        <title>Stories</title>
+        <meta name="description" content="stories" />
+      </Helmet>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus,
       fuga voluptas odit cumque sit natus et, quam eos esse officiis voluptates
       laboriosam maiores eaque perspiciatis consequuntur nostrum nam non

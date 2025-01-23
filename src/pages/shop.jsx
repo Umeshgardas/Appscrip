@@ -3,10 +3,11 @@ import "../assests/styles/pages/shop.css";
 import Icons from "@/common/constants/Icons";
 import Images from "@/common/constants/Images";
 import Image from "next/image";
+import { Helmet } from "react-helmet";
 
 const Shop = () => {
   const [isFilterVisible, setIsFilterVisible] = useState(true);
-  const [expanded, setExpanded] = useState(null); 
+  const [expanded, setExpanded] = useState(null);
   const [likedProducts, setLikedProducts] = useState([]);
 
   const toggleFilterVisibility = () => {
@@ -218,7 +219,6 @@ const Shop = () => {
     },
   ];
 
-
   const handleToggle = (id) => {
     setExpanded((prev) => (prev === id ? null : id));
   };
@@ -227,7 +227,6 @@ const Shop = () => {
   const handleToggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
-
 
   const handleLike = (id) => {
     setLikedProducts((prevLikes) =>
@@ -239,6 +238,10 @@ const Shop = () => {
 
   return (
     <div className="shop">
+      <Helmet>
+        <title>Shop</title>
+        <meta name="description" content="shopping" />
+      </Helmet>
       <div className="shop_hero_section">
         <h2>DISCOVER OUR PRODUCTS</h2>
         <p>
@@ -258,6 +261,7 @@ const Shop = () => {
                   <Image
                     style={{ transform: "rotate(90deg)" }}
                     src={Icons.ArrowDownIcon}
+                    alt="leftarrow"
                   />
                   HIDE FILTER
                 </div>
@@ -266,6 +270,7 @@ const Shop = () => {
                   <Image
                     style={{ transform: "rotate(270deg)" }}
                     src={Icons.ArrowDownIcon}
+                    alt="rightarrow"
                   />
                   SHOW FILTER
                 </div>
@@ -279,9 +284,10 @@ const Shop = () => {
                 <Image
                   style={{ transform: "rotate(180deg)" }}
                   src={Icons.ArrowDownIcon}
+                  alt="uparrow"
                 />
               ) : (
-                <Image src={Icons.ArrowDownIcon} />
+                <Image src={Icons.ArrowDownIcon} alt="downarrow" />
               )}
             </button>
             {dropdownOpen && (
@@ -317,9 +323,10 @@ const Shop = () => {
                         <Image
                           style={{ transform: "rotate(180deg)" }}
                           src={Icons.ArrowDownIcon}
+                          alt="uparrow"
                         />
                       ) : (
-                        <Image src={Icons.ArrowDownIcon} />
+                        <Image src={Icons.ArrowDownIcon} alt="downarrow" />
                       )}
                     </div>
                   </div>
@@ -338,9 +345,9 @@ const Shop = () => {
             </div>
           )}
           <div
-          className={`shop_product_container_right ${
-            isFilterVisible ? "with-filter" : "no-filter"
-          }`}
+            className={`shop_product_container_right ${
+              isFilterVisible ? "with-filter" : "no-filter"
+            }`}
           >
             {/* Add your product content here */}
             <div

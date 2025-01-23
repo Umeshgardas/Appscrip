@@ -1,8 +1,13 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const contactus = () => {
   return (
     <div className="contactus">
+      <Helmet>
+        <title>Contact Us</title>
+        <meta name="description" content="contact" />
+      </Helmet>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt totam,
       dolorum cumque molestias consequatur exercitationem, velit nisi culpa enim
       alias minus dolore perspiciatis, atque eligendi repellendus quas natus.
@@ -40,7 +45,6 @@ const contactus = () => {
       architecto totam, sequi aperiam dolorum cupiditate aliquam tempore eius
       officia saepe? Magnam voluptates, quos itaque hic cupiditate adipisci
       aperiam, ipsa esse saepe quia corrupti sunt libero reprehenderit dolores
-     
     </div>
   );
 };

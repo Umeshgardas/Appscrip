@@ -1,8 +1,13 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const about = () => {
   return (
     <div className="about">
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="about" />
+      </Helmet>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque
       dolores excepturi suscipit. Provident reprehenderit, deserunt magni porro
       dolorum officiis deleniti fugiat dolore, quod, libero accusantium

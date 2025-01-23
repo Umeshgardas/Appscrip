@@ -1,8 +1,13 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const skills = () => {
   return (
     <div className="skills">
+    <Helmet>
+        <title>Skills</title>
+        <meta name="description" content="skills" />
+      </Helmet>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
       pariatur dolore voluptatum cum eaque commodi possimus delectus sed quidem?
       Voluptates, inventore reiciendis repellat dolor suscipit nemo provident
