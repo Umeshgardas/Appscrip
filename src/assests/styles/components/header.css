@@ -1,0 +1,51 @@
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 1);
+  height: 32px;
+  width: 100%;
+  color: rgba(235, 76, 107, 1) ;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+header .header_top {
+  height: 30px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header_top .cubeicon {
+  /* height: 20px; */
+  /* width: 20px; */
+}
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: #ffffff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #61dafb;
+}
